@@ -3,27 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/style.css" rel="stylesheet" />
     <title>Product Review Card Component</title>
   </head>
   <body>
     <main class="main-container">
       <section class="main-image-container">
-        <img src="./assets/images/perfume-image-2.png" alt="perfume-image" />
+        <img
+          src="./assets/images/perfume-image-2.png"
+          alt="perfume-image"
+          class="main-image"
+        />
       </section>
       <section class="product-details-container">
-        <h2 class="product-category">Perfume</h2>
-        <h1 class="product-titles">Gabrielle Essence Eau De Parfum</h1>
-        <p class="product-description">
+        <h2 class="product-category text-preset-4">Perfume</h2>
+        <h1 class="product-titles text-preset-1">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="product-description text-preset-3">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
         <div class="price-container">
-          <p class="discounted-price">$149.99</p>
-          <p class="normal-price">$169.99</p>
+          <p class="discounted-price text-preset-1">$149.99</p>
+          <p class="normal-price text-preset-5">$169.99</p>
         </div>
         <button class="btn-add-to-cart">
-          <img src="./assets/images/shopping-card-logo.png" alt="logo" />
-          <p>Add to Cart</p>
+          <img
+            src="./assets/images/shopping-card-logo.png"
+            alt="logo"
+            class="button-logo"
+          />
+          <p class="text-preset-2 button-text">Add to Cart</p>
         </button>
       </section>
     </main>

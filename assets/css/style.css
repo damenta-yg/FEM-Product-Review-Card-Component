@@ -1,0 +1,171 @@
+:root {
+  --black--color: #1c232b;
+  --grey--color: #6c7289;
+  --cream--color: #f2eae2;
+  --white--color: #fff;
+  --green--500--color: #3d8168;
+  --green--700--color: #1a4032;
+  --spacing--500: 40px;
+  --spacing--400: 32px;
+  --spacing--300: 24px;
+  --spacing--200: 16px;
+  --spacing--100: 8px;
+  --spacing--50: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: clamp(10px, calc(0.5vw + 8px), 16px);
+  /* font-size: 62.5%; */
+}
+
+body {
+  background-color: var(--cream--color);
+}
+
+h1 {
+  color: var(--black--color);
+}
+
+/* component area */
+
+.button-logo {
+  width: 1.575rem;
+  height: 1.575rem;
+}
+
+.btn-add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing--100);
+  padding-inline: var(--spacing--400);
+  padding-block: var(--spacing--200);
+  border: none;
+  border-radius: var(--spacing--100);
+  background-color: var(--green--500--color);
+  cursor: pointer;
+}
+
+.button-text {
+  color: var(--white--color);
+}
+
+.normal-price {
+  text-decoration: line-through;
+  color: var(--grey--color);
+}
+
+.discounted-price {
+  color: var(--green--500--color);
+}
+
+.product-category {
+  text-transform: uppercase;
+  color: var(--grey--color);
+}
+
+.product-titles {
+  color: var(--black--color);
+}
+
+.product-description {
+  color: var(--grey--color);
+}
+
+/* layout area*/
+
+.main-container {
+  margin: 5rem auto;
+  max-width: 35rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--white--color);
+}
+
+.main-image-container {
+  width: 100%;
+}
+
+.main-image {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+}
+
+.product-details-container {
+  padding: var(--spacing--400);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing--300);
+  width: 100%;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: var(--spacing--200);
+}
+
+/* general area */
+
+.text-preset-1 {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.text-preset-2,
+.text-preset-3,
+.text-preset-4,
+.text-preset-5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-preset-2,
+.text-preset-3,
+.text-preset-5 {
+  letter-spacing: 0;
+}
+
+.text-preset-3,
+.text-preset-4,
+.text-preset-5 {
+  font-weight: 500;
+}
+
+.text-preset-2 {
+  font-size: 1.4rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.text-preset-3 {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.text-preset-4 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  letter-spacing: 5px;
+}
+
+.text-preset-5 {
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
